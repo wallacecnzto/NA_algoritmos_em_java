@@ -1,4 +1,4 @@
-package terreno.retangulo;
+package retangulo;
 
 import java.util.Locale;
 import java.util.Scanner;
