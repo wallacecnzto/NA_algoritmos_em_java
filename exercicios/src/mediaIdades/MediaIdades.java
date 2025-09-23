@@ -24,7 +24,7 @@ public class MediaIdades {
         age = sc.nextInt();
 
         if (age < 0) {
-            System.out.println("IMPOSSIVEL CALCULAR");
+            System.out.println("IMPOSSÍVEL CALCULAR");
         } else {
             while (age > 0) {
                 sum += age;
