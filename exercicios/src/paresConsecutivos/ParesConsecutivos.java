@@ -15,38 +15,25 @@ import java.util.Scanner;
 public class ParesConsecutivos {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		
+		int x, soma;
 
-        int x;
-        int soma;
+	    System.out.print("Digite um numero inteiro: ");
+	    x = sc.nextInt();
 
-        System.out.println("Digite um número inteiro: ");
-        x = sc.nextInt();
+	    while (x != 0) {
+	        if (x % 2 != 0) {
+	            x++;
+	        }
 
-        while (x != 0) {
-            if (x % 2 == 0) {
-                soma = x;
-                int contador = 1;
-                while (contador < 6) {
-                    soma += x + 2;
-                    contador += 1;
-                }
-            } else {
-                soma = x + 1;
-                int contador = 1;
-                while (contador < 6) {
-                    soma += x + 2;
-                    contador += 1;
-                }
-            }
-            System.out.printf("SOMA = %d", soma);
+	        soma = 5 * x + 20; // usar a precedência matemática e números mágicos.
+	        System.out.printf("SOMA = %d\n", soma);
 
-            System.out.println("Digite um número inteiro: ");
-            x = sc.nextInt();
-        }
+	        System.out.print("Digite um numero inteiro: ");
+			x = sc.nextInt();
+	    }
 
-
-
-        sc.close();
+		sc.close();
     }
 }
