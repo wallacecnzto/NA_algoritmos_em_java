@@ -16,7 +16,7 @@ public class DentroFora {
         System.out.print("Quantos números você vai digitar? ");
         qtdDigitada = teclado.nextInt();
 
-        for (int i = 0; i != qtdDigitada; i++) {
+        for (int i = 0; i < qtdDigitada; i++) {
             System.out.println("Digite um número: ");
             num = teclado.nextInt();
             if (num >= 10 && num <= 20) {
