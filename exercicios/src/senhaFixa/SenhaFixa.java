@@ -15,18 +15,27 @@ public class SenhaFixa {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        int senhaDoUsuario;
+        do {
+            senhaDoUsuario = sc.nextInt();
+            if(senhaDoUsuario == 2002) {
+                System.out.println("Acesso permitido");
+            } else {
+                System.out.println("Senha invalida! Tente novamente: ");
+            }
+        } while (senhaDoUsuario != 2002);
 
-        final int PASSWORD = 2002;
-        int userPassword;
+        // final int PASSWORD = 2002;
+        // int userPassword;
 
-        System.out.println("Digite a senha: ");
-        userPassword = sc.nextInt();
+        // System.out.println("Digite a senha: ");
+        // userPassword = sc.nextInt();
 
-        while (userPassword != PASSWORD) {
-            System.out.println("Senha invalida! Tente novamente: ");
-            userPassword = sc.nextInt();
-        }
-        System.out.println("Acesso permitido");
+        // while (userPassword != PASSWORD) {
+        //     System.out.println("Senha invalida! Tente novamente: ");
+        //     userPassword = sc.nextInt();
+        // }
+        // System.out.println("Acesso permitido");
 
         sc.close();
     }
